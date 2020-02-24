@@ -27,6 +27,9 @@ public class ChompMouvement : MonoBehaviour
     public float timingReturnToTheMiddle = 1;
     public float timingturning = 1;
     public float idleTimingRotatingWaiting = 4;
+    public GameObject sparks;
+    public GameObject charging;
+
 
     bool lerping;
     bool turningTowardPlauer;
@@ -57,6 +60,17 @@ public class ChompMouvement : MonoBehaviour
 
     private void Update()
     {
+
+        if(anim.GetInteger("animationState") == 1)
+        {
+            charging.SetActive(true);
+        }
+        else
+        {
+            charging.SetActive(false);
+        }
+
+
         rotateTowardCenter();
         rotateTowardPlayer();
         ChangeColor();

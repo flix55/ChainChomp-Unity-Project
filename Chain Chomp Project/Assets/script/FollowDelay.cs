@@ -5,14 +5,16 @@ using UnityEngine;
 public class FollowDelay : MonoBehaviour
 {
     ChompMouvement chompMouvement;
-    public float followSpeed = 5;
+    public float howManyGhost = 10;
     public GameObject[] transparentChainChomp;
     public GameObject[] meshsForTransparentFade;
     public GameObject finalPosition;
     public Material matTransparent0;
     public Material matTransparent1;
-    float countUp;
-    float countUp2;
+    float[] countUp = new float[3];
+
+    float timer;
+    int queu;
 
     void Start()
     {
@@ -21,16 +23,15 @@ public class FollowDelay : MonoBehaviour
 
     void Update()
     {
-        FollowAll();
         SeeChainChomp();
+        Rotation();
     }
 
-    void FollowAll()
+    void Rotation()
     {
         for (int i = 0; i < transparentChainChomp.Length; i++)
         {
-            transparentChainChomp[i].transform.position = Vector3.Lerp(transparentChainChomp[i].transform.position, finalPosition.transform.position, Time.deltaTime * (followSpeed - (i + 2)));
-            transparentChainChomp[i].transform.eulerAngles = finalPosition.transform.eulerAngles;
+            transparentChainChomp[i].transform.eulerAngles = finalPosition.transform.eulerAngles;          
         }
     }
 
@@ -38,18 +39,36 @@ public class FollowDelay : MonoBehaviour
     {
         if (chompMouvement.anim.GetInteger("animationState") == 2)
         {
-            countUp = Mathf.Lerp(countUp, 1, Time.deltaTime * 5);
+            countUp[queu] = Mathf.PingPong(Time.time * 10, 1);
+            SpawnGhost();
         }
         else
         {
-            countUp = Mathf.Lerp(countUp, 0, Time.deltaTime * 20);
+            for (int i = 0; i < 3; i++)
+            {
+                countUp[i] = 0;
+                meshsForTransparentFade[i].GetComponent<Renderer>().material.Lerp(matTransparent0, matTransparent1, Mathf.Clamp01(countUp[queu]));
+            }
+            timer = 0;
         }
+    }
 
-        foreach (GameObject transChain in meshsForTransparentFade)
+    void SpawnGhost()
+    {
+        timer += Time.deltaTime;
+        if(timer >= chompMouvement.timingAttack / (howManyGhost * 4.5))
         {
-            transChain.GetComponent<Renderer>().material.Lerp(matTransparent0, matTransparent1, Mathf.Clamp01(countUp));
-            //Debug.Log(Mathf.Clamp01(countUp));
+            transparentChainChomp[queu].transform.position = finalPosition.transform.position;
+            meshsForTransparentFade[queu].GetComponent<Renderer>().material.Lerp(matTransparent0, matTransparent1, Mathf.Clamp01(countUp[queu]));
+            if (queu < transparentChainChomp.Length -1)
+            {
+                queu++;
+            }
+            else
+            {
+                queu = 0;
+            }
+            timer = 0;
         }
-
     }
 }

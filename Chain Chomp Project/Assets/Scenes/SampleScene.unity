@@ -17602,7 +17602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb08f11c1307a90439aaa15f835bfdac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followSpeed: 7
+  howManyGhost: 3
   transparentChainChomp:
   - {fileID: 1273466502}
   - {fileID: 559116024}
@@ -24022,7 +24022,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2003539307}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0392, y: 0.0287, z: -0}
+  m_LocalPosition: {x: 0, y: 0.0245, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1215359179}

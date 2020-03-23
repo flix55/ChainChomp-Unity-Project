@@ -29,6 +29,7 @@ public class ChompMouvement : MonoBehaviour
     public float idleTimingRotatingWaiting = 4;
     public GameObject sparks;
     public GameObject charging;
+    bool once;
 
 
     bool lerping;
@@ -68,6 +69,16 @@ public class ChompMouvement : MonoBehaviour
         else
         {
             charging.SetActive(false);
+        }
+
+
+        if (anim.GetInteger("animationState") == 3)
+        {
+            sparks.SetActive(true);
+        }
+        else
+        {
+            sparks.SetActive(false);
         }
 
 

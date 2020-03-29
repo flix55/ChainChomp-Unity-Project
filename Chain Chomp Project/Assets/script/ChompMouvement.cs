@@ -62,26 +62,6 @@ public class ChompMouvement : MonoBehaviour
     private void Update()
     {
 
-        if(anim.GetInteger("animationState") == 1)
-        {
-            charging.SetActive(true);
-        }
-        else
-        {
-            charging.SetActive(false);
-        }
-
-
-        if (anim.GetInteger("animationState") == 3)
-        {
-            sparks.SetActive(true);
-        }
-        else
-        {
-            sparks.SetActive(false);
-        }
-
-
         rotateTowardCenter();
         rotateTowardPlayer();
         ChangeColor();

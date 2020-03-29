@@ -13,6 +13,7 @@ public class FollowDelay : MonoBehaviour
     public Material matTransparent1;
     float[] countUp = new float[3];
 
+
     float timer;
     int queu;
 

@@ -53,14 +53,11 @@ public class Chain : MonoBehaviour
                 localDistance = (chainObjects[i - 1].transform.position + chainObjects[i + 1].transform.position) / 2;
 
                 Vector3 localDistanceCopie = localDistance;
-                if(cordDistance < snapTreshold && anim.GetInteger("animationState") != 3)
+                if(cordDistance < snapTreshold && i != 1 && i != 0)
                 {
                     float distanceFromTheGround = (i * -0.2f) + 1.5f;
-                    localDistance.y = distanceFromTheGround + (localDistance.y * 0.3f);
-
-                    //float distanceFromTheGround = Mathf.Pow(((i * 0.9f)), -1.05f);
-                    //distanceFromTheGround = distanceFromTheGround + 1;
-                    //localDistance.y = distanceFromTheGround + (localDistance.y * 0.2f);
+                    float YCurve = localDistance.y;
+                    YCurve = distanceFromTheGround + (localDistance.y * 0.2f);
 
                     /*float pointBetwenCordDistance(){
                         return null;
@@ -96,9 +93,9 @@ public class Chain : MonoBehaviour
     {
         if (anim.GetInteger("animationState") == 2 || anim.GetInteger("animationState") == 3)
         {
-            springEffect2 = 0.04f;
+            springEffect2 = 0.03f;
             rotationSpeed = 5;
-            amountspringTension =2;
+            amountspringTension = 3;
         }
         else
         {

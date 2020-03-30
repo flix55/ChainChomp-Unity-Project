@@ -24,17 +24,7 @@ ModelImporter:
   - first:
       74: -7752163255915603928
     second: double jump
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: base
-    second: {fileID: 2100000, guid: df739bbd46c26c743aaa4da09dd85737, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: base1
-    second: {fileID: 2100000, guid: df739bbd46c26c743aaa4da09dd85737, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0

@@ -13100,7 +13100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b80dcdd2833112046905462beca8b424, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 30
 --- !u!4 &1527215976 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 6368f03fdc499354c81563703e5f6778,
@@ -13196,7 +13196,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1628168363}
   m_LocalRotation: {x: 0.06467684, y: -0.47212175, z: -0.31446844, w: 0.82099175}
-  m_LocalPosition: {x: -2.257, y: -6.714, z: 8.16}
+  m_LocalPosition: {x: -2.41, y: -6.46, z: 7.84}
   m_LocalScale: {x: 1.23, y: 1.23, z: 1.23}
   m_Children: []
   m_Father: {fileID: 487514802}

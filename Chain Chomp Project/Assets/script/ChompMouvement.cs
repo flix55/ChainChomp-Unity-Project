@@ -31,7 +31,6 @@ public class ChompMouvement : MonoBehaviour
     public GameObject charging;
     bool once;
 
-
     bool lerping;
     bool turningTowardPlauer;
     bool turningTowardCenter;

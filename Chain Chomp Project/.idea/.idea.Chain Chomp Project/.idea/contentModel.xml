@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Felix\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Felix\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Chain Chomp Project.-605674355.00" t="ExcludeRecursive" />
+    <e p="E:\Project Games\GitHubUnity\ChainChomp\ChainChomp-Unity-Project\Chain Chomp Project" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Editor" t="Include">
+          <e p="ConditionalPropertyAttributeDrawer.cs" t="Include" />
+        </e>
+        <e p="script" t="Include">
+          <e p="Camera.cs" t="Include" />
+          <e p="Chain.cs" t="Include" />
+          <e p="ChompMouvement.cs" t="Include" />
+          <e p="ConditionalPropertyAttribute.cs" t="Include" />
+          <e p="FollowDelay.cs" t="Include" />
+          <e p="ParticalCallFromAnimation.cs" t="Include" />
+          <e p="ParticalsAtribute.cs" t="Include" />
+          <e p="ParticalSystem.cs" t="Include" />
+          <e p="PLayerController.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Chain Chomp Project.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

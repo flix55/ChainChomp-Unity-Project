@@ -18,13 +18,13 @@ MonoBehaviour:
     value: 1
   focusDistance:
     overrideState: 1
-    value: 5
+    value: 17.12
   aperture:
     overrideState: 1
-    value: 5.6
+    value: 0.4
   focalLength:
     overrideState: 1
-    value: 66
+    value: 40
   kernelSize:
     overrideState: 1
     value: 1
@@ -134,7 +134,7 @@ MonoBehaviour:
     value: 0
   intensity:
     overrideState: 1
-    value: 1.15
+    value: 1.5
   color:
     overrideState: 1
     value: {r: 0.24528301, g: 0.17007832, b: 0.17494887, a: 1}
@@ -161,7 +161,7 @@ MonoBehaviour:
     value: 0.28
   quality:
     overrideState: 1
-    value: 3
+    value: 4
 --- !u!114 &4768014046211869765
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -220,23 +220,23 @@ MonoBehaviour:
     overrideState: 0
     value: -10
   colorFilter:
-    overrideState: 0
+    overrideState: 1
     value: {r: 1, g: 1, b: 1, a: 1}
   hueShift:
     overrideState: 0
     value: 0
   saturation:
-    overrideState: 0
+    overrideState: 1
     value: 0
   brightness:
     overrideState: 0
     value: 0
   postExposure:
-    overrideState: 0
+    overrideState: 1
     value: 0
   contrast:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 5
   mixerRedOutRedIn:
     overrideState: 0
     value: 100
@@ -269,7 +269,7 @@ MonoBehaviour:
     value: {x: 1, y: 1, z: 1, w: 0}
   gamma:
     overrideState: 1
-    value: {x: 1, y: 1, z: 1, w: -0.22508037}
+    value: {x: 1, y: 1, z: 1, w: -0.279232}
   gain:
     overrideState: 1
     value: {x: 0.89788985, y: 0.9870752, z: 1, w: -0.19626191}
@@ -1491,10 +1491,10 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 12.18
+    value: 7.62
   threshold:
     overrideState: 1
-    value: 1.63
+    value: 1.57
   softKnee:
     overrideState: 1
     value: 0.5

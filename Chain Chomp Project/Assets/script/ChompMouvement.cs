@@ -4,29 +4,30 @@ using UnityEngine;
 
 public class ChompMouvement : MonoBehaviour
 {
-
+    [Header("AnimationCurve")]
     public AnimationCurve curveBasicBegening = AnimationCurve.Linear(0.0f, 0.0f, 1.0f, 1.0f);
     public AnimationCurve curveBasicMouvement = AnimationCurve.Linear(0.0f, 0.0f, 1.0f, 1.0f);
     public AnimationCurve curveAttack = AnimationCurve.Linear(0.0f, 0.0f, 1.0f, 1.0f);
     public Animator anim;
-    [Space(20)]
+    [Header("Variables")]
     public GameObject chainChomp;
     public GameObject mesh;
     public GameObject Player;
     public float turnSpeed = 5f;
     public float turnSpeedIdle = 15f;
     public float turnAmount = 20f;
-    public float howFar = 15;
-    public float howlow = -5;
-    [Space(20)]
+    public float frontChargeDistance = 15;
+    public float backChargeDistance = -5;
+    [Header("Speed")]
     public float speedRedChargeAttack = 2f;
     public float speedRedAttatck = 5f;
-    [Space(20)]
+    [Header("Timing")]
     public float timingCharge = 2.5f;
     public float timingAttack = 1.5f;
     public float timingReturnToTheMiddle = 1;
     public float timingturning = 1;
     public float idleTimingRotatingWaiting = 4;
+    [Header("VFX")]
     public GameObject sparks;
     public GameObject charging;
     bool once;
@@ -107,7 +108,7 @@ public class ChompMouvement : MonoBehaviour
     void ChargeAttack()
     {
         colorRed = true;
-        Vector3 chargePosition = (chainChomp.transform.transform.right * howlow) + chainChomp.transform.position;
+        Vector3 chargePosition = (chainChomp.transform.transform.right * backChargeDistance) + chainChomp.transform.position;
         StartCoroutine( SmoothLerp(chainChomp.transform, chainChomp.transform.localPosition, chargePosition, timingCharge));
     }
 
@@ -115,7 +116,7 @@ public class ChompMouvement : MonoBehaviour
     {
         anim.SetInteger("animationState", 2);
         colorRed = false;
-        Vector3 chargePosition = (chainChomp.transform.transform.right * howFar) + chainChomp.transform.position;
+        Vector3 chargePosition = (chainChomp.transform.transform.right * frontChargeDistance) + chainChomp.transform.position;
         StartCoroutine(SmoothLerp2(chainChomp.transform, chainChomp.transform.localPosition, chargePosition, timingAttack));
     }
 

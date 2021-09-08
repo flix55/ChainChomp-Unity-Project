@@ -7,12 +7,19 @@ public class Chain : MonoBehaviour
     public Animator anim;
     public GameObject[] chainObjects;
     [Space(10)]
+    
+    [Range(0.03f,0.6f)]
     public float springEffect = 0.1f;
+    [Range(1.5f,3f)]
     public float amountspringTension = 5;
+    [Range(0f,30f)]
     public float rotationSpeed = 10;
+    [Range(0.03f,0.1f)]
+    public float attackAnimationChainJitterAmount;
+    [Space(10)]
+    
     public float floorCollisionYPosition = 0.5f;
     public float snapTreshold = 6.8f;
-    public float attackAnimationChainJitterAmount;
 
     Vector3 localDistance;
     //clean code the book would be pround of me

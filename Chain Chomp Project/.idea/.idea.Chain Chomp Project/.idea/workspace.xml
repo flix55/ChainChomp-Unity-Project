@@ -23,14 +23,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Chain Chomp Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Chain Chomp Project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/script/Chain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/script/Chain.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/script/ChompMouvement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/script/ChompMouvement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/AnnotationManager" beforeDir="false" afterPath="$PROJECT_DIR$/Library/AnnotationManager" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/bdc76f-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/bdc76f-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/b5b121-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/b5b121-mainStage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/5d/5d42e273791f02849b521a53b26f847d" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/5d/5d42e273791f02849b521a53b26f847d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/c9/c9e942bb3a8e7f042aa167c18a0b8997" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/c9/c9e942bb3a8e7f042aa167c18a0b8997" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +86,7 @@
       <workItem from="1609991881920" duration="2755000" />
       <workItem from="1630792355426" duration="2197000" />
       <workItem from="1630883064197" duration="816000" />
-      <workItem from="1631046967815" duration="5037000" />
+      <workItem from="1631046967815" duration="5346000" />
     </task>
     <servers />
   </component>

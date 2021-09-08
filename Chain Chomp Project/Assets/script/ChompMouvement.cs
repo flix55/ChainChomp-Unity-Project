@@ -208,7 +208,7 @@ public class ChompMouvement : MonoBehaviour
         chainChomp.transform.rotation = Quaternion.Slerp(chainChomp.transform.rotation, idleNewRotation, turnSpeedIdle * Time.deltaTime);
     }
 
-    //optimise that
+    //refacter that
     public IEnumerator SmoothLerp(Transform trans, Vector3 startPos, Vector3 endPos, float seconds)
     {
         lerping = true;

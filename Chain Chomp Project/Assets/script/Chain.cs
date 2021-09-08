@@ -22,7 +22,7 @@ public class Chain : MonoBehaviour
     public float snapTreshold = 6.8f;
 
     Vector3 localDistance;
-    //clean code the book would be pround of me
+    //clean code the book would be pround of me :)
     Quaternion[] newRotation = new[] { new Quaternion(0f, 0f, 0f, 0f), new Quaternion(0f, 0f, 0f, 0f), new Quaternion(0f, 0f, 0f, 0f) , new Quaternion(0f, 0f, 0f, 0f) , new Quaternion(0f, 0f, 0f, 0f) , new Quaternion(0f, 0f, 0f, 0f) , new Quaternion(0f, 0f, 0f, 0f) , new Quaternion(0f, 0f, 0f, 0f) };
     Vector3[] direction = new[] { new Vector3(0f, 0f, 0f), new Vector3(1f, 1f, 1f), new Vector3(1f, 1f, 1f), new Vector3(1f, 1f, 1f), new Vector3(1f, 1f, 1f), new Vector3(1f, 1f, 1f), new Vector3(1f, 1f, 1f), new Vector3(1f, 1f, 1f) };
 
@@ -104,9 +104,4 @@ public class Chain : MonoBehaviour
             rotationSpeed = rotationSpeedInitialValue;
         }
     }
-
-    //add delay
-    //rotation on the x axis as well // and spring effects on rotation // 180 degres x rotation when crossing the middle 
-    //chain physcis with the more tension, the less weight thay have starting from the attachChain (aka fucking physic)
-    //alright so two main position, one for the in betwen(aka localdistance), one for the ground(make one), find the middle ground of those two variable if the magnitude is lacking
 }
